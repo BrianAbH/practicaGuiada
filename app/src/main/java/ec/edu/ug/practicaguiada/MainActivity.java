@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     EditText etCorreo;
     Button btnEnviar;
     private static final String STATE_NOMBRE = "STATE_NOMBRE";
-    public static final String EXTRA_NOMBRE = "EXTRA_NOMBRE";
+    public static final String STATE_CORREO = "STATE_CORREO";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,11 +64,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onSaveInstanceState(@NonNull Bundle outState){
         super.onSaveInstanceState(outState);
         outState.putString(STATE_NOMBRE, etNombre.getText().toString());
+        outState.putString(STATE_CORREO, etCorreo.getText().toString());
     }
 
     @Override
     protected void onRestoreInstanceState(@NonNull Bundle saveInstanceState){
         super.onRestoreInstanceState(saveInstanceState);
         etNombre.setText(saveInstanceState.getString(STATE_NOMBRE,""));
+        etCorreo.setText(saveInstanceState.getString(STATE_CORREO,""));
     }
 }

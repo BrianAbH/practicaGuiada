@@ -10,9 +10,10 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/tvTitulo"
         android:textStyle="bold"
         android:textSize="20sp"
-        android:text="Formulario de Registro"
+        android:text="@string/txtTitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
@@ -20,14 +21,14 @@
         android:id="@+id/et_Nombre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Escribe tu nombre"
+        android:hint="@string/txtNombre"
         android:textSize="16sp"/>
 
     <EditText
         android:id="@+id/et_Correo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Escribe tu correo"
+        android:hint="@string/txtCorreo"
         android:textSize="16sp"
         android:layout_marginTop="16sp"/>
 
@@ -36,6 +37,6 @@
         android:id="@+id/btn_Saludar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Enviar"/>
+        android:text="@string/txtBtnEnviar"/>
 
 </LinearLayout>

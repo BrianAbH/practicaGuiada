@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">practicaGuiada</string>
+    <string name="txtTitulo">Formulario de Registro</string>
+    <string name="txtNombre">Escribe tu nombre</string>
+    <string name="txtCorreo">Escribe tu correo</string>
+    <string name="txtBtnEnviar">Enviar</string>
 </resources>
